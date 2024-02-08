@@ -10,7 +10,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
 
-        $treeBuilder = new TreeBuilder("jsonrpc_settings");
+        $treeBuilder = new TreeBuilder("json_rpc_client");
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
