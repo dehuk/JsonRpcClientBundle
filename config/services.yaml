@@ -1,4 +1,3 @@
 services:
-  _defaults:
-    autowire: true
-    autoconfigure: true
+
+  Dehuk\Bundle\JsonRpcClient\Service\JsonRpcClient: ~

@@ -17,6 +17,11 @@ class JsonRpcClientExtension extends Extension
             new FileLocator(__DIR__.'/../../config')
         );
         $loader->load('services.yaml');
+
+        $configuration = $this->getConfiguration($configs, $container);
+        $config = $this->processConfiguration($configuration, $configs);
+
+        $container->setParameter('json_rpc_client.product_type', $config['product_type']);
     }
 
 }
