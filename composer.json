@@ -1,0 +1,16 @@
+{
+  "name": "dehuk/jsonrpc-client-bundle",
+  "type": "symfony-bundle",
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "symfony/framework-bundle": "^5.4"
+  },
+  "require-dev": {},
+  "repositories": [],
+  "autoload": {
+    "psr-4": {
+      "Dehuk\\Bundle\\JsonRpcClient\\": "src/"
+    }
+  }
+}
